@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/snehapadgaonkar/my-jenkins-demo-repo.git'
+                git branch: 'python-based', url: 'https://github.com/snehapadgaonkar/my-jenkins-demo-repo.git'
             }
         }
 
